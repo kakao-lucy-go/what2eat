@@ -12,5 +12,13 @@ module.exports = function(app, fs)
             console.log( data );
             res.end( data );
         });
-     })
+     });
+
+     app.get('/menus', function (req, res) {
+        //__dirname : 현재 모듈 위치
+        fs.readFile( __dirname + "/../data/" + "menu.json", "utf8", function (err, data) {
+            console.log( data );
+            res.end( data );
+        });
+     });
 }
