@@ -21,4 +21,12 @@ module.exports = function(app, fs)
             res.end( data );
         });
      });
+
+     app.get('/tags', function (req, res) {
+        //__dirname : 현재 모듈 위치
+        fs.readFile( __dirname + "/../data/" + "tag.json", "utf8", function (err, data) {
+            console.log( data );
+            res.end( data );
+        });
+     });
 }
