@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
-var router = require('./router/main')(app);
+var fs = require('fs')
+
+var router = require('./router/main')(app, fs);
+
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
