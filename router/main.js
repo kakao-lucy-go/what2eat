@@ -74,4 +74,28 @@ module.exports = function(app, fs)
             res.end( data );
         });
      });
+
+
+     app.post('/tags/:id', function (req, res) {
+        var result = {  };
+        var tag = req.body;
+
+        var id = req.params.id
+        // LOAD DATA & CHECK DUPLICATION
+        fs.readFile( __dirname + "/../data/tag.json", 'utf8',  function(err, data){
+            var tags = JSON.parse(data);
+            
+            tags[id].push(tag)
+            console.log(tags)
+            fs.writeFile(__dirname + "/../data/tag.json",
+                            
+                JSON.stringify(tags, null, '\t'), "utf8", function(err, data){
+                    result = {"success": 1};
+                    res.json(result);
+                }
+            )
+
+        })
+
+     });
 }
