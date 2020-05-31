@@ -84,8 +84,12 @@ module.exports = function(app, fs)
         // LOAD DATA & CHECK DUPLICATION
         fs.readFile( __dirname + "/../data/tag.json", 'utf8',  function(err, data){
             var tags = JSON.parse(data);
-            
-            tags[id].push(tag)
+            if(!tags[id]) {
+
+                tags[id]=new Array(tag)
+            }else {
+                tags[id].push(tag)
+            }
             console.log(tags)
             fs.writeFile(__dirname + "/../data/tag.json",
                             
