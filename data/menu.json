@@ -1,45 +1,83 @@
 [
-    {
-        "id":1,
-        "store":1,
-        "season":1,
-        "day":3,
-        "totalStars":3,
-        "eatDay":"202005281230",
-        "total":9,
-        "what2Eat":[
-            {
-                "id":1,
-                "people":3,
-                "menu":1,
-                "img":"",
-                "stars":3,
-                "tag":["매움","양이 많음"]
-            },
-            {
-                "id":2,
-                "people":3,
-                "menu":2,
-                "img":"",
-                "stars":3,
-                "tag":["양이 많음"]
-            },
-            {
-                "id":3,
-                "people":2,
-                "menu":3,
-                "img":"",
-                "stars":3,
-                "tag":["비리지 않음"]
-            },
-            {
-                "id":4,
-                "people":1,
-                "menu":4,
-                "img":"",
-                "stars":3,
-                "tag":["고기가 적음"]
-            }
-        ]
-    }
+	{
+		"id": 1,
+		"store": 1,
+		"season": 1,
+		"day": 3,
+		"totalStars": 3,
+		"eatDay": "202005281230",
+		"total": 9,
+		"what2Eat": [
+			{
+				"id": 1,
+				"people": 3,
+				"menu": 1,
+				"img": "",
+				"stars": 3,
+				"tag": [
+					"매움",
+					"양이 많음"
+				]
+			},
+			{
+				"id": 2,
+				"people": 3,
+				"menu": 2,
+				"img": "",
+				"stars": 3,
+				"tag": [
+					"양이 많음"
+				]
+			},
+			{
+				"id": 3,
+				"people": 2,
+				"menu": 3,
+				"img": "",
+				"stars": 3,
+				"tag": [
+					"비리지 않음"
+				]
+			},
+			{
+				"id": 4,
+				"people": 1,
+				"menu": 4,
+				"img": "",
+				"stars": 3,
+				"tag": [
+					"고기가 적음"
+				]
+			}
+		]
+	},
+	{
+		"id": 2,
+		"store": 2,
+		"season": 1,
+		"day": 0,
+		"totalStars": 3,
+		"eatDay": "202005311230",
+		"total": 2,
+		"what2Eat": [
+			{
+				"id": 1,
+				"people": 1,
+				"menu": 1,
+				"img": "",
+				"stars": 3,
+				"tag": []
+			},
+			{
+				"id": 2,
+				"people": 1,
+				"menu": 2,
+				"img": "",
+				"stars": 3,
+				"tag": [
+					"매움"
+				]
+			}
+		]
+	}
 ]
